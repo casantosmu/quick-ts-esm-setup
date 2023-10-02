@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:eslint-comments/recommended",
+    // Consider enabling strict-type-checked
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.spec.ts"],
+      "plugins": ["vitest"],
+      "extends": ["plugin:vitest/recommended"]
+    }
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": true
+  },
+  "root": true,
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "eslint-comments/no-unused-disable": "error"
+  },
+  "ignorePatterns": ["dist", "coverage"]
+}

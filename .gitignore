@@ -1,0 +1,14 @@
+node_modules/
+dist/
+
+# very important
+/**/.env*.local
+/**/.env
+
+# coverage
+coverage/
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
