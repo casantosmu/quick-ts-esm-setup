@@ -30,8 +30,8 @@ Before starting your project, please make the following changes:
 - `npm run dev`: Start the application in development mode with automatic restart, debug mode, and environment variables loaded from `.env`.
 - `npm test`: Run the test suite with loaded environment variables from `.env`
 - `npm run test:coverage`: Run the test suite with code coverage analysis.
-- `npm run lint`: Run ESLint for static code analysis.
-- `npm run prettify`: Automatically format the code with Prettier.
+- `npm run lint`: Run Prettier to check code formatting and ESLint for static code analysis.
+- `npm run format`: Automatically format the code with Prettier.
 - `npm run typecheck`: Run TypeScript type checking.
 - `npm run prepare`: Install Husky Git hooks.
 
