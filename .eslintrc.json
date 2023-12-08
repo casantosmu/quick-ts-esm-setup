@@ -2,11 +2,12 @@
   "extends": [
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
-    // Consider enabling strict-type-checked
+    // Consider substituting for: "strict-type-checked"
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:import/recommended",
     "plugin:import/typescript"
+    // Consider adding "plugin:unicorn/recommended"
   ],
   "overrides": [
     {
