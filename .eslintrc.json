@@ -1,7 +1,6 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:eslint-comments/recommended",
     // Consider substituting for: "strict-type-checked"
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
@@ -32,8 +31,6 @@
       }
     }
   },
-  "rules": {
-    "eslint-comments/no-unused-disable": "error"
-  },
+  "reportUnusedDisableDirectives": true,
   "ignorePatterns": ["dist", "coverage"]
 }
