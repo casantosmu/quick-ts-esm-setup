@@ -12,8 +12,8 @@
     "dev": "tsx watch -r dotenv/config --inspect src/index.ts",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "prettier . --check && eslint .",
-    "format": "prettier . --write",
+    "lint": "eslint . && prettier . --check",
+    "lint:fix": "eslint --fix . && prettier . --write",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
