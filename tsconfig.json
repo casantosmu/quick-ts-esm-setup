@@ -6,8 +6,6 @@
     /* Modules */
     "module": "node16",
     "moduleResolution": "node16",
-    /* Emit */
-    "outDir": "dist",
     /* Interop Constraints */
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
