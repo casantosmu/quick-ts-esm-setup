@@ -2,7 +2,7 @@
 
 > Quick TypeScript ES Modules setup for projects
 
-This repository provides a default configuration to quickly start TypeScript projects with ES Modules. It comes with minimal Prettier, ESLint and test configurations, along with features like automatic server restart, environment variables support, debug mode, and Git hooks. Additionally, it provides VSCode extensions and settings recommendations.
+This repository provides a default configuration to quickly start TypeScript projects with ES Modules. It comes with minimal Prettier, ESLint, and test configurations, along with features like automatic server restart, environment variables support, debug mode, and Git hooks. Additionally, it provides VSCode extensions and settings recommendations.
 
 ## Installation
 
@@ -34,6 +34,15 @@ Before starting your project, please make the following changes:
 - `npm run format`: Automatically format the code with Prettier.
 - `npm run typecheck`: Run TypeScript type checking.
 - `npm run prepare`: Install Husky Git hooks.
+
+## Dependabot
+
+This project utilizes Dependabot, which is active alongside a GitHub Action that automatically merges minor and patch versions. The configuration files for these tools are:
+
+- Dependabot: `.github/dependabot.yaml`
+- Automerge GitHub Action: `.github/workflows/ci.yaml` (located within the "dependabot" step)
+
+If you are not interested in using these features, feel free to delete one or both of the mentioned configuration files.
 
 ## License
 
