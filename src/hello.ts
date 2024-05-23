@@ -1,3 +1,3 @@
-const world = "world";
+import { env } from "node:process";
 
-export const hello = (who: string = world) => `Hello ${who}!`;
+export const hello = () => env["HELLO_WORLD"];

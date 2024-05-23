@@ -4,12 +4,12 @@
   "main": "dist/index.js",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": "^20.12.0"
   },
   "scripts": {
     "start": "node .",
     "build": "shx rm -rf dist && tsc --project tsconfig.build.json",
-    "dev": "tsx watch -r dotenv/config --inspect src/index.ts",
+    "dev": "tsx watch --env-file=.env --inspect src/index.ts",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . && prettier . --check",
@@ -18,22 +18,21 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
+    "@eslint/js": "^8.57.0",
+    "@types/node": "^20.12.12",
     "@vitest/coverage-v8": "^1.6.0",
-    "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-unicorn": "^53.0.0",
-    "eslint-plugin-vitest": "^0.4.1",
+    "eslint-plugin-vitest": "^0.5.4",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "shx": "^0.3.4",
     "tsx": "^4.10.5",
     "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0",
     "vitest": "^1.2.2"
   },
   "lint-staged": {
