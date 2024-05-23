@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import ts from "typescript-eslint";
+import comments from "@eslint-community/eslint-plugin-eslint-comments/configs";
 import node from "eslint-plugin-n";
 import vitest from "eslint-plugin-vitest";
 
@@ -16,6 +17,7 @@ export default ts.config(
       },
     },
   },
+  comments.recommended,
   node.configs["flat/recommended-module"],
   // Consider adding "unicorn.configs["flat/recommended"]"
   {
@@ -36,7 +38,9 @@ export default ts.config(
             "vitest",
             "@eslint/js",
             "typescript-eslint",
+            "@eslint-community/eslint-plugin-eslint-comments",
             "eslint-plugin-n",
+            "eslint-plugin-unicorn",
             "eslint-plugin-vitest",
           ],
         },

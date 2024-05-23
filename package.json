@@ -18,6 +18,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
     "@eslint/js": "^8.57.0",
     "@types/node": "^20.8.9",
     "@vitest/coverage-v8": "^1.6.0",
