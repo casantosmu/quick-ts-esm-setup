@@ -18,11 +18,12 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@eslint/js": "^8.57.0",
     "@types/node": "^20.8.9",
     "@vitest/coverage-v8": "^1.6.0",
     "dotenv": "^16.4.5",
-    "@eslint/js": "^8.57.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-unicorn": "^53.0.0",
     "eslint-plugin-vitest": "^0.5.4",
     "husky": "^9.0.11",

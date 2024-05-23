@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import ts from "typescript-eslint";
+import node from "eslint-plugin-n";
 import vitest from "eslint-plugin-vitest";
 
 export default ts.config(
@@ -15,6 +16,7 @@ export default ts.config(
       },
     },
   },
+  node.configs["flat/recommended-module"],
   // Consider adding "unicorn.configs["flat/recommended"]"
   {
     files: ["**/*.{test,spec}.{ts,js,cjs,mjs}"],
@@ -24,6 +26,22 @@ export default ts.config(
   {
     files: ["**/*.{js,cjs,mjs}"],
     ...ts.configs.disableTypeChecked,
+  },
+  {
+    rules: {
+      "n/no-unpublished-import": [
+        "error",
+        {
+          allowModules: [
+            "vitest",
+            "@eslint/js",
+            "typescript-eslint",
+            "eslint-plugin-n",
+            "eslint-plugin-vitest",
+          ],
+        },
+      ],
+    },
   },
   {
     ignores: ["dist", "coverage"],
