@@ -47,5 +47,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Copy .env files
+        run: cp .env.example .env
+
       - name: Run tests coverage
         run: npm run test:coverage
