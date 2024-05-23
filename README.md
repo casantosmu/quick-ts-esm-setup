@@ -35,15 +35,6 @@ Before starting your project, please make the following changes:
 - `npm run typecheck`: Run TypeScript type checking.
 - `npm run prepare`: Install Husky Git hooks.
 
-## Dependabot
-
-This project utilizes Dependabot, which is active alongside a GitHub Action that automatically merges minor and patch versions. The configuration files for these tools are:
-
-- Dependabot: `.github/dependabot.yaml`
-- Automerge GitHub Action: `.github/workflows/ci.yaml` (located within the "dependabot" step)
-
-If you are not interested in using these features, feel free to delete one or both of the mentioned configuration files.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
