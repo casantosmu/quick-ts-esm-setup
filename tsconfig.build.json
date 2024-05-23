@@ -4,5 +4,5 @@
     "outDir": "dist"
   },
   "include": ["src"],
-  "exclude": ["**/*.{test,spec}.{js,ts}", "**/{tests,test,__tests__}/**"]
+  "exclude": ["**/*.{test,spec}.ts", "**/{tests,test,__tests__}/**"]
 }
