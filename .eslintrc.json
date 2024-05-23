@@ -10,7 +10,7 @@
   ],
   "overrides": [
     {
-      "files": ["**/*.test.ts", "**/*.spec.ts"],
+      "files": ["**/*.{test,spec}.{js,ts}"],
       "plugins": ["vitest"],
       "extends": ["plugin:vitest/recommended"]
     }
